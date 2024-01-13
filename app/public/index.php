@@ -1,3 +1,5 @@
 <?php
 
-echo 'Welcome to PHP';
+xdebug_info();
+$x = 'WOW';
+echo 'Welcome to PHP browser. ' . $x;
