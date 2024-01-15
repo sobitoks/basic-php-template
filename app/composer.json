@@ -5,7 +5,7 @@
   "license": "MIT",
   "authors": [{"name": "sobitoks"}],
   "require": {
-    "php": "8.2.14",
+    "php": "8.3.1",
     "ext-pdo": "*",
     "ext-pdo_mysql": "*",
     "symfony/cache": "^6.1",

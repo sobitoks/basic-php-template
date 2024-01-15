@@ -1,4 +1,4 @@
-FROM php:8.2.14-fpm-alpine as app
+FROM php:8.3.1-fpm-alpine as app
 
 ARG UID=1000
 ARG GID=1000
@@ -35,6 +35,6 @@ ENV XDEBUG_MODE=off
 
 COPY ./docker/php/conf.d/xdebug.ini /usr/local/etc/php/conf.d/xdebug.ini
 
-# Install the most recent STABLE xdebug 3.x version (for example 3.2.2)
+# Install the most recent STABLE xdebug 3.x version (for example 3.2.2) -> xdebug-^3@stable
 RUN set -eux; \
-    install-php-extensions xdebug-^3@stable
+    install-php-extensions xdebug-3.3.1

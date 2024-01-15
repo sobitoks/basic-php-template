@@ -27,7 +27,6 @@ restart: ## Restart the containers
 
 stop: ## Stop the containers
 	U_ID=${UID} G_ID=${GID} docker compose -f docker-compose.yaml stop
-
 ### </PRD BUILD> ###
 
 ### <DEV BUILD> ###
