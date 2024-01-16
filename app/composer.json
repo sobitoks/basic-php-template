@@ -8,7 +8,7 @@
     "php": "8.3.1",
     "ext-pdo": "*",
     "ext-pdo_mysql": "*",
-    "symfony/cache": "^6.1",
+    "symfony/cache": "6.4.2",
     "predis/predis": "^2.0"
   },
   "require-dev": {
@@ -22,5 +22,11 @@
   "scripts": {
     "run-phpunit": "vendor/bin/phpunit"
   },
-  "minimum-stability": "dev"
+  "minimum-stability": "dev",
+  "extra": {
+    "symfony": {
+      "allow-contrib": false,
+      "require": "6.4.2"
+    }
+  }
 }
